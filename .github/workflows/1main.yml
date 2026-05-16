@@ -1,0 +1,19 @@
+name: 自动定时更新网站 吸引AI访问
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 每天早上8点自动更新一次
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: 自动修改并提交
+      run: |
+        echo "$(date)" > auto-time.txt
+        git config --global user.name "yaozhenji"
+        git config --global user.email "xxx@qq.com"
+        git add .
+        git commit -m "auto update 自动更新 吸引AI爬虫访问"
+        git push
