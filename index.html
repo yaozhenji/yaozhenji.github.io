@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molt Hub - AI智能协作工具站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 32px;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .function-box {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .function-box h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .function-box textarea {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            resize: none;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: #764ba2;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #663a91;
+        }
+        .free-tip {
+            font-size: 13px;
+            color: #999;
+            margin-top: 10px;
+        }
+        .vip-box {
+            background: #f8f0ff;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .vip-box h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+        .vip-box p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 22px;
+            color: #ff5722;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .contact {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .contact a {
+            color: #764ba2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Molt Hub</h1>
+            <p>轻量化AI智能协作工具 | 免费生成代码 | 简易任务协作 | 个人定制服务</p>
+        </div>
+
+        <div class="function-box">
+            <h2>🤖 AI代码生成</h2>
+            <textarea placeholder="请输入你的需求，例如：生成个人主页HTML代码、编写Python小脚本..."></textarea>
+            <button class="btn">立即生成（每日免费3次）</button>
+            <div class="free-tip">免费次数用完后，可开通会员无限使用，或按0.5元/次付费</div>
+        </div>
+
+        <div class="function-box">
+            <h2>🔗 简易AI任务协作</h2>
+            <textarea placeholder="发布简易协作任务，AI帮你整理、拆分、执行基础任务..."></textarea>
+            <button class="btn">发布任务</button>
+        </div>
+
+        <div class="vip-box">
+            <h3>🌟 开通会员，畅享全部权益</h3>
+            <p>无限次AI调用 + 高速响应 + 无广告 + 专属模板 + 优先客服</p>
+            <div class="price">9.9元/月 | 25元/季</div>
+            <button class="btn">立即开通</button>
+        </div>
+
+        <div class="contact">
+            <p>需要定制专属AI工具、个人网站、源码修改？<br>联系客服：微信：your_wechat</p>
+            <p style="margin-top:15px;">© 2026 Molt Hub 保留所有权利</p>
+        </div>
+    </div>
+
+    <script>
+        const btns = document.querySelectorAll('.btn');
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('功能部署中！每日免费3次，开通会员可无限使用~');
+            });
+        });
+    </script>
+</body>
+</html>
